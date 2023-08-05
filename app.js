@@ -6,7 +6,7 @@ console.log("Test server starting...");
 var handler = function(request, response) {
   console.log("Received request from " + request.connection.remoteAddress);
   response.writeHead(200);
-  response.end("Container Hostname is " + os.hostname() + "\n");
+  response.end("Container Hostname IS " + os.hostname() + "\n");
 };
 
 var www = http.createServer(handler);
